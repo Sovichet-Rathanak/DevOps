@@ -1,7 +1,7 @@
 package itc.gic.i4d;
 
-import javax.swing.*;
 import java.awt.*;
+import javax.swing.*;
 
 /**
  * Hello world!
@@ -9,6 +9,9 @@ import java.awt.*;
 public final class App {
     private App() {
     }
+
+    public static final int FRAME_WIDTH = 300;
+    public static final int FRAME_HEIGHT = 200;
 
     /**
      * Says hello to the world.
@@ -18,13 +21,13 @@ public final class App {
         // Create the frame
         JFrame frame = new JFrame("Hello JFrame");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(300, 200);
+        frame.setSize(FRAME_WIDTH, FRAME_HEIGHT);
         frame.setLayout(new BorderLayout());
-        
+
         // Create a label with text
         JLabel label = new JLabel("Hello, World!", SwingConstants.CENTER);
         frame.add(label, BorderLayout.CENTER);
-        
+
         // Make the frame visible
         frame.setVisible(true);
     }
