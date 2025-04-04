@@ -7,11 +7,15 @@ import javax.swing.*;
  * Hello world!
  */
 public final class App {
+    // Private constructor to prevent instantiation
     private App() {
     }
 
-    public static final int FRAME_WIDTH = 300;
-    public static final int FRAME_HEIGHT = 200;
+    /** Width of the application window in pixels. */
+    private static final int FRAME_WIDTH = 300;
+
+    /** Height of the application window in pixels. */
+    private static final int FRAME_HEIGHT = 200;
 
     /**
      * Says hello to the world.
